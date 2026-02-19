@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ABI — Medication reminders + best pharmacy prices</title>
+  <meta name="description" content="ABI helps you remember your meds and find the best prices across pharmacies. Coming soon." />
+  <meta property="og:title" content="ABI — Medication reminders + best pharmacy prices" />
+  <meta property="og:description" content="Coming soon. Leave your contact and we’ll notify you when ABI launches." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/abi-card.jpg" />
+  <link rel="icon" href="assets/logo-app.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="orb orb-c"></div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="ABI home">
+        <img src="assets/logo-mark.png" alt="ABI logo" class="brand__mark" />
+        <span class="brand__name">ABI</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#status">Status</a>
+        <a href="#contact" class="btn btn--small">Get updates</a>
+      </nav>
+
+      <div class="lang" role="group" aria-label="Language">
+        <button class="chip chip--active" data-lang="en" type="button">EN</button>
+        <button class="chip" data-lang="ka" type="button">KA</button>
+      </div>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" hidden>
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#status">Status</a>
+      <a href="#contact" class="btn btn--small">Get updates</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="pill">
+            <span class="dot"></span>
+            <span data-i18n="comingSoonTag">Coming soon</span>
+          </div>
+
+          <h1 data-i18n="heroTitle">Your meds, on time. The best price, nearby.</h1>
+          <p class="lead" data-i18n="heroLead">
+            ABI is a mobile app that helps you follow your treatment schedule and compare pharmacy prices in one place.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#contact" data-i18n="ctaPrimary">Notify me at launch</a>
+            <a class="btn btn--ghost" href="#features" data-i18n="ctaSecondary">See features</a>
+          </div>
+
+          <div class="trust">
+            <div class="trust__item">
+              <div class="trust__num">1</div>
+              <div class="trust__text" data-i18n="trust1">Create reminders in seconds</div>
+            </div>
+            <div class="trust__item">
+              <div class="trust__num">2</div>
+              <div class="trust__text" data-i18n="trust2">Search prices across pharmacies</div>
+            </div>
+            <div class="trust__item">
+              <div class="trust__num">3</div>
+              <div class="trust__text" data-i18n="trust3">Stay consistent, save money</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="card card--hero">
+            <img src="assets/abi-card.jpg" alt="ABI card visual" class="card__img" />
+            <div class="card__cap">
+              <span data-i18n="cardCaption">ABI card concept</span>
+              <span class="badge" data-i18n="badgeConcept">Concept</span>
+            </div>
+          </div>
+
+          <div class="stack">
+            <img src="assets/ui-opening.png" alt="ABI app opening screen" />
+            <img src="assets/ui-home.png" alt="ABI app home screen" />
+            <img src="assets/ui-reminder.png" alt="ABI app reminders" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2 data-i18n="featuresTitle">Designed to make treatment easier</h2>
+        <p class="sub" data-i18n="featuresSub">
+          Clean, simple, and focused — so you can build healthy habits without friction.
+        </p>
+
+        <div class="grid3">
+          <div class="feature">
+            <div class="feature__icon">⏰</div>
+            <h3 data-i18n="f1Title">Smart reminders</h3>
+            <p data-i18n="f1Body">Morning / evening / night schedules, exact time, and an easy “taken” flow.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">🔎</div>
+            <h3 data-i18n="f2Title">Price search</h3>
+            <p data-i18n="f2Body">Find your medicine and compare prices across pharmacies near you.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">🧾</div>
+            <h3 data-i18n="f3Title">Clear history</h3>
+            <p data-i18n="f3Body">See what you took today and keep track of your routine.</p>
+          </div>
+        </div>
+
+        <div class="showcase">
+          <div class="showcase__copy">
+            <h3 data-i18n="showTitle">Search pharmacies, filter results</h3>
+            <p data-i18n="showBody">
+              ABI’s search helps you quickly find the best match — by price, popularity, or nearby location.
+            </p>
+            <ul class="list">
+              <li data-i18n="showLi1">Sort by lowest price, best match, nearby</li>
+              <li data-i18n="showLi2">See pharmacy address and price clearly</li>
+              <li data-i18n="showLi3">Add medicine to reminders in one flow</li>
+            </ul>
+          </div>
+          <div class="showcase__img">
+            <img src="assets/ui-search.png" alt="ABI pharmacy search screen" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="how">
+      <div class="container">
+        <h2 data-i18n="howTitle">How it works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step__n">01</div>
+            <h3 data-i18n="s1Title">Add your medicine</h3>
+            <p data-i18n="s1Body">Type the name, choose a schedule, set duration.</p>
+          </div>
+          <div class="step">
+            <div class="step__n">02</div>
+            <h3 data-i18n="s2Title">Get reminders</h3>
+            <p data-i18n="s2Body">ABI notifies you at the right time — even on busy days.</p>
+          </div>
+          <div class="step">
+            <div class="step__n">03</div>
+            <h3 data-i18n="s3Title">Compare prices</h3>
+            <p data-i18n="s3Body">Search pharmacies and choose the best option for you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="status">
+      <div class="container status">
+        <div class="status__box">
+          <h2 data-i18n="statusTitle">Status</h2>
+          <p class="sub" data-i18n="statusBody">
+            ABI is currently in development. We’re polishing the experience and preparing for pilot partners.
+          </p>
+
+          <div class="progress">
+            <div class="progress__bar" style="--p: 58%"></div>
+          </div>
+          <div class="progress__meta">
+            <span data-i18n="progressLeft">Development in progress</span>
+            <span>58%</span>
+          </div>
+
+          <div class="bullets">
+            <div class="bullet">
+              <span class="check">✓</span>
+              <span data-i18n="b1">Core reminder flows designed</span>
+            </div>
+            <div class="bullet">
+              <span class="check">✓</span>
+              <span data-i18n="b2">Pharmacy search UI prepared</span>
+            </div>
+            <div class="bullet">
+              <span class="check">•</span>
+              <span data-i18n="b3">Data partnerships & integrations</span>
+            </div>
+          </div>
+
+          <a class="btn" href="#contact" data-i18n="statusCta">Join the early access list</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="contact">
+      <div class="container contact">
+        <div class="contact__copy">
+          <h2 data-i18n="contactTitle">Leave your contact — we’ll reach out</h2>
+          <p class="sub" data-i18n="contactBody">
+            Want to be first to try ABI? Share your email (and optionally phone). We’ll notify you when the product is ready.
+          </p>
+          <div class="note">
+            <span class="lock">🔒</span>
+            <span data-i18n="privacy">We’ll only use your info to contact you about ABI. No spam.</span>
+          </div>
+        </div>
+
+        <!-- Netlify form (no backend needed) -->
+        <form name="abi-early-access" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks.html" class="form">
+          <input type="hidden" name="form-name" value="abi-early-access" />
+          <p class="hidden">
+            <label>Don’t fill this out: <input name="bot-field" /></label>
+          </p>
+
+          <div class="row">
+            <label>
+              <span data-i18n="nameLabel">Name</span>
+              <input name="name" type="text" autocomplete="name" placeholder="Mariam" required />
+            </label>
+            <label>
+              <span data-i18n="phoneLabel">Phone (optional)</span>
+              <input name="phone" type="tel" autocomplete="tel" placeholder="+995 ..." />
+            </label>
+          </div>
+
+          <label>
+            <span data-i18n="emailLabel">Email</span>
+            <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+          </label>
+
+          <label>
+            <span data-i18n="msgLabel">Message (optional)</span>
+            <textarea name="message" rows="4" placeholder="Tell us what you’d like ABI to solve for you."></textarea>
+          </label>
+
+          <button class="btn btn--full" type="submit" data-i18n="submit">Send</button>
+          <p class="tiny" data-i18n="formHint">
+            By submitting, you agree we can contact you about early access. You can opt out anytime.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <img src="assets/logo-mark.png" alt="ABI" class="footer__logo" />
+          <div>
+            <div class="footer__brand">ABI</div>
+            <div class="footer__small" data-i18n="footerTag">Medication reminders • Pharmacy price comparison</div>
+          </div>
+        </div>
+        <div class="footer__right">
+          <a href="#top" data-i18n="backTop">Back to top</a>
+          <span class="sep">•</span>
+          <span class="footer__small">© <span id="year"></span> ABI</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
