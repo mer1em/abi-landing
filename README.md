@@ -1,19 +1,19 @@
-# ABI Landing (Coming Soon)
+# ABI — Coming Soon Landing (ქართულად)
 
-A lightweight, static landing page for ABI with a Netlify contact form (no backend required).
+სტატიკური (backend-ის გარეშე) ლენდინგი ABI-სთვის, Netlify ფორმით — რომ მომხმარებელმა დაგიტოვოთ საკონტაქტო ინფორმაცია.
 
-## Deploy (recommended): Netlify (with form handling)
-1. Create a GitHub repo and push this folder.
-2. Go to Netlify → **Add new site** → **Import from Git** → select your repo.
-3. Build settings:
-   - **Build command:** (empty)
-   - **Publish directory:** `.`
-4. Deploy.
+## რეკომენდებული ჰოსტინგი: Netlify (ფორმების ჩაშენებული მხარდაჭერა)
+1) შექმენი GitHub repo და ატვირთე ეს ფოლდერი.  
+2) Netlify → **Add new site** → **Import from Git** → აირჩიე repo.  
+3) Build settings:
+- **Build command:** ცარიელი
+- **Publish directory:** `.`
 
-Netlify will automatically capture submissions from the form named `abi-early-access`.
+Deploy-ის შემდეგ, ფორმის გაგზავნები ნახავ: **Site settings → Forms**
 
-## Local preview
-Open `index.html` in your browser (or use VS Code Live Server).
+## ლოკალურად ნახვა
+გახსენი `index.html` ბრაუზერში (ან გამოიყენე VS Code Live Server).
 
-## Forms
-Form submissions redirect to `/thanks.html`.
+## ფორმა
+Form name: `abi-early-access`  
+გაგზავნის შემდეგ გადადის `/thanks.html` გვერდზე.
